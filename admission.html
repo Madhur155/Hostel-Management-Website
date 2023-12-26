@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#3e454c">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Hostel Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+<header>
+  <div class="first"> 
+    <a href="http://pcet.org.in/">
+        <img id="def" src="img/pcet.jpg" alt="pcet" width="120px">
+    </a>
+    <p id="abc"><br>PIMPRI CHINCHWAD EDUCATION TRUST's HOSTEL <br> HANDLED & MANAGED BY ZOLO</p>
+    <a href="https://zolostays.com/">
+        <img id="xyz" src="img/zolo.jpg" alt="zolo" width="100px">
+    </a>
+  </div>
+</header>
+  
+  <div class="nav">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <!-- <li><a href="login.php">Login</a></li> -->
+          <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+  </div>
+    <div id="navbar-container"></div>
+    <main>
+        <!-- <form method="post" action="book-hostel.php">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">
+                    <h4 align="left">Room Related info : </h4>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Room no. : </label>
+                <div class="col-sm-8">
+                    <select name="room" id="room" class="form-control" required>
+                        <option value="">Select Room</option>
+                        <option value="101">101</option>
+                        <option value="102">102</option>
+                        <option value="103">103</option>
+                    </select>
+                    <span id="room-availability-status" style="font-size:12px;"></span>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Fees Per Month : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="fpm" id="fpm" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Food Status : </label>
+                <div class="col-sm-8" style="font-size: 19px;">
+                    <input type="radio" value="0" name="foodstatus" checked="checked"> Without Food <br>
+                    <input type="radio" value="1" name="foodstatus"> With Food(Rs 2000.00 Per Month Extra)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Stay From : </label>
+                <div class="col-sm-8">
+                    <input type="date" name="stayf" id="stayf" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Duration : </label>
+                <div class="col-sm-8">
+                    <select name="duration" id="duration" class="form-control">
+                        <option value="">Select Duration in Month</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                    <h4 align="left">Personal info : </h4>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Course :</label>
+                <div class="col-sm-8">
+                    <select name="course" id="course" class="form-control" required>
+                        <option value="">Select Course</option>
+                        <option value="">B.Tech</option>
+                        <option value="">B.Com</option>
+                        <option value="">BSC</option>
+                        <option value="">BCA</option>
+                        <option value="">MCA</option>
+                        <option value="">MBA</option>
+                        <option value="">BE</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Registration No : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="regno" id="regno" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">First Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="fname" id="fname" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Middle Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="mname" id="mname" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Last Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="lname" id="lname" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Gender : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="gender">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Contact No : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="contact" id="contact">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Email id : </label>
+                <div class="col-sm-8">
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Emergency Contact: </label>
+                <div class="col-sm-8">
+                    <input type="text" name="econtact" id="econtact" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Guardian Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="gname" id="gname" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Guardian Relation : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="grelation" id="grelation" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Guardian Contact no : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="gcontact" id="gcontact" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">
+                    <h4 align="left">Correspondense Address : </h4>
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Address : </label>
+                <div class="col-sm-8">
+                    <textarea rows="5" name="address" id="address" class="form-control" required="required"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">City : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="city" id="city" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">State : </label>
+                <div class="col-sm-8">
+                    <select name="state" id="state" class="form-control" required>
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Pincode : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="pincode" id="pincode" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">
+                    <h4 align="left">Permanent Address : </h4>
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-7 control-label">Permanent Address same as Correspondence address</label>
+                <div class="col-sm-5">
+                    <input type="checkbox" name="adcheck" value="1" />
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Address : </label>
+                <div class="col-sm-8">
+                    <textarea rows="5" name="paddress" id="paddress" class="form-control"
+                        required="required"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">City : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="pcity" id="pcity" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">State : </label>
+                <div class="col-sm-8">
+                    <select name="pstate" id="pstate" class="form-control" required>
+
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Pincode : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="ppincode" id="ppincode" class="form-control" required="required">
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-sm-offset-4">
+                <button class="btn btn-default" type="submit">Cancel</button>
+                <input type="submit" id="butt" name="submit" Value="Register" class="btn btn-primary">
+            </div>
+        </form> -->
+        <form method="post" action="">
+            <div class="form">
+
+                <div class="form-group">
+                    <label for="name_instr">
+                        Name of the Student in block letters
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Surname:</label>
+                    <input type="text" id="lname" required="true">
+            </div>
+            <div class="form-group">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" required="true">
+            </div>
+            <div class="form-group">
+                <label for="mname">Father's Name:</label>
+                <input type="text" id="mname" required="true">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" class="form-control" required>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bgrp">Blood Group:</label>
+                <input type="text" id="bgrp" required="true">
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="pname">Name of the Parent /Guardian:</label>
+                <input type="text" id="pname" required="true">
+            </div>
+            <div class="form-group">
+                <label for="hadd">Home Address:</label>
+                <input type="text" id="hadd" required="true">
+            </div>
+            <div class="form-group">
+                <label for="tele_no">Tele. No with STD code:</label>
+                <input type="text" id="tele_no" required="true">
+            </div>
+            <div class="form-group">
+                <label for="rel_guardian">Relationship with Guardian:</label>
+                <input type="text" id="rel_guardian" required="true">
+            </div>
+            <div class="form-group">
+                <label for="P_occupation">Occupation of Parent / Guardian:</label>
+                <input type="text" id="P_occupation" required="true">
+            </div>
+            <div class="form-group">
+                <label for="p_income">Annual Income (from all sources )
+                    Of Parents / Guardian ( Rs.):</label>
+                    <input type="text" id="p_income" required="true">
+                </div>
+                <div class="form-group">
+                    <label for="g_add">Name and address of local Guardian
+                        with Phone No.:</label>
+                <input type="text" id="g_add" required="true">
+            </div>
+            <br><br>
+            <label for="inst" style="font-size: 21px;">Details about the examination passed:</label>
+            <div class="form-group">
+                
+                <div class="exams">
+                    <div class="10class">
+                        <div class="exam_column">
+                            <label for="fisrtexam_name">Name of Exam :</label>
+                            <input type="text" id="fisrtexam_name" required="true">
+                        </div>
+                        <div class="exam_column">
+                            <label for="fisrtexam_year">Year:</label>
+                            <input type="text" id="fisrtexam_year" required="true">
+                        </div>
+                        <div class="exam_column">
+                            <label for="fisrtexam_percent">percent:</label>
+                            <input type="text" id="fisrtexam_percent" required="true">
+                        </div>
+                        <div class="exam_column">
+                            <label for="fisrtexam_uni">Name of the University /
+                                School:</label>
+                                <input type="text" id="fisrtexam_uni" required="true">
+                    </div>
+                </div>
+                <div class="12class_diploma">
+                    <div class="exam_column">
+                        <label for="secondexam_name">Name of Exam :</label>
+                        <input type="text" id="secondexam_name" required="true">
+                    </div>
+                    <div class="exam_column">
+                        <label for="secondexam_year">Year:</label>
+                        <input type="text" id="secondexam_year" required="true">
+                    </div>
+                    <div class="exam_column">
+                        <label for="secondexam_percent">percent:</label>
+                        <input type="text" id="secondexam_percent" required="true">
+                    </div>
+                    <div class="exam_column">
+                        <label for="secondexam_uni">Name of the University /
+                            School:</label>
+                            <input type="text" id="secondexam_uni" required="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="P_occupation">Give your earlier Hostel Accommodation details, if any:</label>
+                <input type="text" id="P_occupation" required="true">
+            </div>
+            
+            
+            <br>
+            <center>
+                <button type="submit" >Submit</button>
+            </center>
+        </div>
+        </form>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-5">
+              <h6>GET IN TOUCH</h6>
+              <p><span class="glyphicon glyphicon-map-marker"></span> 83, Sector 26, Pradhikaran, <br> &nbsp;&nbsp;&nbsp; Nigdi, Pune, 411044 <br> &nbsp;&nbsp;&nbsp; (Near Ganesh Talav)</p>
+              <p><span class="glyphicon glyphicon-earphone"></span> +020 - 27641037</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="http://www.pccoepune.com/nirf.php">NIRF</a></li>
+                <li><a href="http://pcet.org.in/" target="_blank">PCET</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-xs-6 col-md-3">
+              <h6>Location</h6>
+              <div class="col-xs-12 col-sm-6 col-md-3 px-15 mb-40">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d794.692151658393!2d73.76283198680908!3d18.654400635372212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9f9d7f53735%3A0x505363a097cdc368!2sPCET%20Boys%20Hostel%20and%20Mess!5e0!3m2!1sen!2sus!4v1699706057814!5m2!1sen!2sus" width="250" height="160" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            </div>
+  
+            
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+           <a href="#">PCET</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('input[type="checkbox"]').click(function () {
+            if ($(this).prop("checked") == true) {
+                $('#paddress').val($('#address').val());
+                $('#pcity').val($('#city').val());
+                $('#pstate').val($('#state').val());
+                $('#ppincode').val($('#pincode').val());
+            }
+
+        });
+    });
+</script>
+
+</html>
